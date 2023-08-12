@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>K&hearts;L</title>
+  <link rel="icon" type="image/x-icon" href="heart.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{background-color:lavender}
+    .button{
+      background-color: dodgerblue;
+      border: 2px solid royalblue;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      padding: 8px 18px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: royalblue
+    }
+    
+  </style>
+</head>
+
+
+<body>
+
+  <h1 style="text-align:center; color:mediumvioletred">I Love You Logan</h1>
+  <h2 style="color:crimson; position:relative; left:150px; top: 20px;">I love my Logan because...</h2>
+  <div id="display" style="background-color:rgb(245,203,240);color:darkmagenta;padding:10px;border:3px solid palevioletred; border-radius:8px;
+   font-size:130%; text-align:center;width:30%; margin:auto;">
+    
+  </div>
+
+  <button class="button" onclick="randomizeList()" style="position:absolute; top:140px; left:155px">Click me!</button>
+  <br>
+  <div style="margin:auto; position:fixed; top:75%; left:50%; transform:translate(-50%, -75%);">
+  <img src="kl.jpg" width=340.2px height=453.6px style="display:block;">
+  </div>
+  
+  
+<ul id="reasons" class = "list" style="display:none">
+    <li>He is soft</li>
+    <li>He is sensitive</li>
+    <li>He is kind</li>
+    <li>He is so thoughtful</li>
+    <li>He makes me smile in surprising ways</li>
+    <li>He is always thinking about me</li>
+    <li>He knows how to make me happy</li>
+    <li>He lets me be myself</li>
+    <li>He cooks yummy food for me</li>
+    <li>He gives the most warm and loving cuddles</li>
+    <li>He holds me close and makes me feel like we're the only two people that exist in the world</li>
+    <li>He is the prettiest boy I've ever seen</li>
+    <li>He makes me laugh</li>
+    <li>He is clever and mischevious</li>
+    <li>He makes me feel pretty</li>
+    <li>He inspires to be me honest to myself</li>
+    <li>He has a gorgeous body</li>
+    <li>He listens to me</li>
+    <li>He tries to understand me</li>
+    <li>He is smart and hard-working</li>
+    <li>He has beautiful eyes. They are the clearest blue</li>
+    <li>He takes care of me</li>
+    <li>He is a silly goofy guy</li>
+    <li>He has an attractive sense of style</li>
+    <li>He is shy</li>
+    <li>He is responsible</li>
+    <li>He tries new things even though he might be scared or uncomfortable</li>
+    <li>His kisses are sweet and soft, just like he is</li>
+    <li>I can trust him with anything</li>
+    <li>He is caring towards his friends</li>
+    <li>He comes up with fun dates</li>
+    <li>He spoils me even though he doesn't need to</li>
+    <li>He is by my side through ups and downs</li>
+    <li>He supports me and believes in me</li>
+    <li>He admits when he is wrong and takes accountability</li>
+    <li>He helps me see my flaws and accepts them</li>
+    <li>He is patient</li>
+    <li>He encourages me to become a better person</li>
+    <li>He is helpful and selfless</li>
+    <li>He makes me feel safe</li>
+    <li>He tastes yummy</li>
+    <li>He is not afraid to be a goofball and make himself the butt of a joke with his friends</li>
+    <li>He gives me hope even when I don't have it myself</li>
+    <li>We can be silly together</li>
+    <li>He is a good hand-holder</li>
+    <li>He is an amazing kisser</li>
+    <li>He is amazing at making love</li>
+    <li>He is thoughtful and caring towards me while we make love</li>
+    <li>He lets me give him the biggest hickies</li>
+    <li>He is so gentle with me</li>
+    <li>He is great at giving surprises</li>
+    <li>He plays the guitar for me. And it's really hot</li>
+    <li>He protects me</li>
+    <li>He has a soft face</li>
+    <li>He is an angel</li>
+    <li>He teaches me new things</li>
+    <li>He finds ways to distract me from sadness</li>
+    <li>He got me to like watching Naruto</li>
+    <li>He makes me origami flowers</li>
+    <li>He does arts and crafts with me</li>
+    <li>He made me a beautiful watercolor painting and friendship bracelet</li>
+    <li>He has a heart-fluttering laugh</li>
+    <li>He makes me websites to show me how much he loves me</li>
+    <li>He is strong</li>
+    <li>He makes me feel sexy and desired</li>
+    <li>He keeps me company</li>
+    <li>He sends me funny TikToks and memes</li>
+    <li>He makes me feel weak in the knees when he wraps his arms around me</li>
+    <li>He makes my heart melt when he snuggles into me and lays his head on my chest</li>
+    <li>He protects me</li>
+    <li>He has a beautiful singing voice</li>
+    <li>His smile makes my heart soar</li>
+    <li>He has gorgeous, luscious hair</li>
+    <li>He is a wonderful gift-giver</li>
+    <li>He is so, so, so good-looking</li>
+  </ul>
+
+<script>
+function randomizeList() { 
+  var list = document.getElementById("reasons");
+  var nodes = list.children;
+  var randomNumber = Math.floor(Math.random() * (nodes.length));
+  document.getElementById("display").innerHTML = nodes[randomNumber].textContent;
+  
+  
+  
+}
+</script>
+
+</body>
+</html>
